@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -25,6 +25,11 @@ button {
 
 input {
     border-radius: 4px;
+    padding: 8px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    outline: none;
 }
 
 button:hover {
@@ -36,6 +41,7 @@ button:hover {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -43,12 +49,19 @@ button:hover {
 }
 
 :root {
-    --bg-primary: #1a1a2e;       /* fond principal */
-    --bg-secondary: #16213e;     /* fond des cartes/composants */
-    --bg-hover: #0f3460;         /* hover */
-    --text-primary: #e0e0e0;     /* texte principal */
-    --text-secondary: #a0a0a0;   /* texte secondaire */
-    --accent: #e94560;           /* couleur d'accentuation */
+    --bg-primary: #1a1a2e;
+    /* fond principal */
+    --bg-secondary: #16213e;
+    /* fond des cartes/composants */
+    --bg-hover: #0f3460;
+    /* hover */
+    --text-primary: #e0e0e0;
+    /* texte principal */
+    --text-secondary: #a0a0a0;
+    /* texte secondaire */
+    --accent: #e94560;
+    /* couleur d'accentuation */
     --accent-hover: #c73652;
-    --border: #2a2a4a;           /* bordures */
+    --border: #2a2a4a;
+    /* bordures */
 }

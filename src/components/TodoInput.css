@@ -14,11 +14,6 @@
 
 .todo-input input {
     flex: 1;
-    padding: 8px;
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-    border: 1px solid var(--border);
-    outline: none;
 }
 
 .todo-input button {

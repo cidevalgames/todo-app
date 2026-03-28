@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import TodoInput from '../components/TodoInput';
 import FilterBar from '../components/FilterBar';
 import TodoList from '../components/TodoList';
+import './Home.css';
 
 function Home() {
     const [todos, setTodos] = useState([]);

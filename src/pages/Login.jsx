@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import '../styles/Form.css';
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -40,6 +41,7 @@ function Login() {
                 {error && <p className="error">{error}</p>}
                 <button type="submit">Se connecter</button>
             </form>
+            <p>Pas encore de compte ? <Link to="/register">S'inscrire</Link></p>
         </div>
     )
 }
