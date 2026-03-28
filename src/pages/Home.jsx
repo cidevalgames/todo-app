@@ -33,10 +33,9 @@ function Home() {
     return (
         <div className='home'>
             <div className='home-header'>
-
                 <h1>Bienvenue dans la Todo List !</h1>
                 <div>
-                    <span>{user.mail}</span>
+                    <span>{user.email}</span>
                     <button onClick={logout}>Se déconnecter</button>
                 </div>
             </div>
