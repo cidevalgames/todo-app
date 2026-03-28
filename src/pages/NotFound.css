@@ -1,0 +1,33 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.not-found h1 {
+    font-size: 8rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.not-found p {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+}
+
+.not-found a {
+    margin-top: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.not-found a:hover {
+    background-color: var(--accent-hover);
+}
