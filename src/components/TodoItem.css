@@ -1,0 +1,56 @@
+.todo-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    height: 32px;
+    border: 1px solid var(--border);
+    padding: 0 4px;
+    border-radius: 8px;
+    animation: fadeIn 0.2s ease;
+}
+
+.todo-item.completed p {
+    text-decoration: line-through;
+}
+
+.todo-item input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    aspect-ratio: 1;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+
+.custom-checkbox:hover {
+    border-color: var(--accent);
+    background-color: var(--bg-hover);
+}
+
+.custom-checkbox.checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.todo-item button {
+    padding: 0 16px;
+    background-color: var(--accent);
+    height: 24px;
+}
+
+.todo-item button:hover {
+    background-color: var(--accent-hover);
+}
+
+.todo-item p {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}

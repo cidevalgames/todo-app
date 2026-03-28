@@ -1,0 +1,26 @@
+.todo-input {
+    width: 100%;
+    padding: 32px 0;
+}
+
+.todo-input form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+    height: 32px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 8px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    outline: none;
+}
+
+.todo-input button {
+    padding: 0 32px;
+}
